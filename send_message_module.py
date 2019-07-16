@@ -11,7 +11,7 @@ def deal_filename(file_location):
     import os
 
     deal_str_len = len(file_location)
-    file_name = file_location[file_location.rfind(os.path.sep):deal_str_len]
+    file_name = file_location[file_location.rfind(os.path.sep)+1:deal_str_len]
 
     return file_name
 
@@ -43,7 +43,7 @@ def send_message(sender, sender_password, recevier, message_title, file_location
     filename = deal_filename(file_location) 
     with open(file_location,"rb") as f_file:
         f_file = MIMEApplication(f_file.read())
-        f_file.add_header('Content-Disposition','attachment', filename = filename)
+        f_file.add_header('Content-Disposition','attachment', filename = ("gbk", "", filename))
         message.attach(f_file)
         
     #登录SMTP服务器并发送邮件
