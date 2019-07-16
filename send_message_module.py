@@ -55,3 +55,11 @@ def send_message(sender, sender_password, recevier, message_title, file_location
     bind_smtp.quit()
 
     return load_status
+
+if __name__ == "__main__":
+    print("此文件为爬取数据文件，不是直接运行文件...")
+    print("运行文件为main_function.py")
+    quit()
+else:
+    print("发送邮件函数调用中...") 
+

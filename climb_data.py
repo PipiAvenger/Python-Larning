@@ -39,7 +39,7 @@ def climb_data(string_url):
     str_time_len = len(content_news_time)
 
     #判断是否爬取到信息
-    if str_title_len & str_time_len:
+    if not (str_title_len and str_time_len):
         climb_data_func_status = False 
 
     #创建字典，用字典存储新闻数量和新闻标题及发布时间
@@ -60,15 +60,12 @@ def climb_data(string_url):
     else:
         climb_data_func_status = False
         print("爬取失败...")
-    
+
     return climb_data_func_status
     
 if __name__ == "__main__":
-    climb_data("http://www.ipanel.cn/article.php?code=00090001")
-
-    
-
-
-    
-
-    
+    print("此文件为爬取数据文件，不是直接运行文件...")
+    print("运行文件为main_function.py")
+    quit()
+else:
+    print("爬取函数调用中...") 
