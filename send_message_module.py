@@ -15,7 +15,7 @@ def deal_filename(file_location):
 
     return file_name
 
-# 发送邮件函数 参数分别为发送人，接受者，邮件标题，附件本地位置，邮件正文内容
+# 发送邮件函数 参数分别为发送人邮箱，发送人邮箱密码，接受者，邮件标题，附件本地位置，邮件正文内容
 def send_message(sender, sender_password, recevier, message_title, file_location, main_content):
 
     from smtplib import SMTP
