@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CERR	brk/chat.h	29;"	d
+CERR	chat.h	29;"	d
+CERR_EXIT	brk/chat.h	33;"	d
+CERR_EXIT	chat.h	33;"	d
+IF_CHECK	chat.h	36;"	d
+NAME_LEN	brk/chat.h	25;"	d
+NAME_LEN	chat.h	25;"	d
+START_RUN	brk/chat.h	27;"	d
+START_RUN	chat.h	27;"	d
+TEST	brk/chatserver_main.c	14;"	d	file:
+TEST	chatserver_main.c	14;"	d	file:
+TEXT_LEN	brk/chat.h	26;"	d
+TEXT_LEN	chat.h	26;"	d
+_list_client_node	brk/chat.h	/^typedef struct _list_client_node$/;"	s
+_list_client_node	chat.h	/^typedef struct _list_client_node$/;"	s
+_message	brk/chat.h	/^typedef struct _message$/;"	s
+_message	chat.h	/^typedef struct _message$/;"	s
+_message$	tags	/^_message	brk\/chat.h	\/^typedef struct _message$\/;"	s$/;"	x	file:
+addr	brk/chat.h	/^    struct              sockaddr_in addr;$/;"	m	struct:_list_client_node	typeref:struct:_list_client_node::sockaddr_in
+addr	chat.h	/^    struct              sockaddr_in addr;$/;"	m	struct:_list_client_node	typeref:struct:_list_client_node::sockaddr_in
+client_message	brk/chatserver_main.c	/^    message                 client_message;$/;"	l
+client_message	chatserver_main.c	/^    message                 client_message;$/;"	l
+create_node	brk/chatserver_function.c	/^ptr_client_list_node create_node (struct sockaddr_in *temp_addr)$/;"	f
+create_node	chatserver_function.c	/^ptr_client_list_node create_node (struct sockaddr_in *temp_addr)$/;"	f
+format	tags	/^!_TAG_FILE_FORMAT	2	\/extended format; --format=1 will not append ;" to lines\/$/;"	v
+head_node	brk/chatserver_main.c	/^    ptr_list_client_node    head_node;$/;"	l
+head_node	chatserver_main.c	/^    ptr_list_client_node    head_node;$/;"	l
+main	brk/chatserver_main.c	/^int main (int argc, char **argv)$/;"	f
+main	chatserver_main.c	/^int main (int argc, char **argv)$/;"	f
+message	brk/chat.h	/^}message,*ptr_message;$/;"	t	typeref:struct:_message
+message	chat.h	/^}message,*ptr_message;$/;"	t	typeref:struct:_message
+name	brk/chat.h	/^    char name[NAME_LEN];$/;"	m	struct:_message
+name	chat.h	/^    char name[NAME_LEN];$/;"	m	struct:_message
+next	brk/chat.h	/^    _list_client_node *  next;$/;"	m	struct:_list_client_node
+next	chat.h	/^    _list_client_node *  next;$/;"	m	struct:_list_client_node
+node	brk/chatserver_function.c	/^    ptr_client_list_node  node;$/;"	l
+node	chatserver_function.c	/^    ptr_client_list_node  node;$/;"	l
+ptr_list_client_node	brk/chat.h	/^}*ptr_list_client_node;$/;"	t	typeref:struct:_list_client_node
+ptr_list_client_node	chat.h	/^}*ptr_list_client_node;$/;"	t	typeref:struct:_list_client_node
+ptr_message	brk/chat.h	/^}message,*ptr_message;$/;"	t	typeref:struct:_message
+ptr_message	chat.h	/^}message,*ptr_message;$/;"	t	typeref:struct:_message
+server_addr	brk/chatserver_main.c	/^        IF_CHECK(recvfrom(server_sock_fd,(ptr_message)&client_message,sizeof(message),0,(struct sockaddr*)&server_addr),&server_addr,&server_addr_len);$/;"	l
+server_addr	brk/chatserver_main.c	/^    struct sockaddr_in      server_addr;$/;"	l
+server_addr	chatserver_main.c	/^        IF_CHECK(recvfrom(server_sock_fd,(ptr_message)&client_message,sizeof(message),0,(struct sockaddr*)&server_addr),&server_addr,&server_addr_len);$/;"	l
+server_addr	chatserver_main.c	/^    struct sockaddr_in      server_addr;$/;"	l
+server_addr_len	brk/chatserver_main.c	/^        IF_CHECK(recvfrom(server_sock_fd,(ptr_message)&client_message,sizeof(message),0,(struct sockaddr*)&server_addr),&server_addr,&server_addr_len);$/;"	l
+server_addr_len	brk/chatserver_main.c	/^    socklen_t               server_addr_len;$/;"	l
+server_addr_len	chatserver_main.c	/^        IF_CHECK(recvfrom(server_sock_fd,(ptr_message)&client_message,sizeof(message),0,(struct sockaddr*)&server_addr),&server_addr,&server_addr_len);$/;"	l
+server_addr_len	chatserver_main.c	/^    socklen_t               server_addr_len;$/;"	l
+server_sock_fd	brk/chatserver_main.c	/^    int                     server_sock_fd;    $/;"	l
+server_sock_fd	chatserver_main.c	/^    int                     server_sock_fd;    $/;"	l
+swtich	brk/chatserver_main.c	/^        swtich(client_message.type)$/;"	f
+swtich	chatserver_main.c	/^        swtich(client_message.type)$/;"	f
+text	brk/chat.h	/^    char text[TEXT_LEN];$/;"	m	struct:_message
+text	chat.h	/^    char text[TEXT_LEN];$/;"	m	struct:_message
+type	brk/chat.h	/^    char type;$/;"	m	struct:_message
+type	chat.h	/^    char type;$/;"	m	struct:_message
